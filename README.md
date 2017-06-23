@@ -50,9 +50,9 @@ Numbers
 Classic Algorithms
 -----------------
 
-**Collatz Conjecture** - Start with a number *n > 1*. Find the number of steps it takes to reach one using the following process: If *n* is even, divide it by 2. If *n* is odd, multiply it by 3 and add 1.
+[check]**Collatz Conjecture** - Start with a number *n > 1*. Find the number of steps it takes to reach one using the following process: If *n* is even, divide it by 2. If *n* is odd, multiply it by 3 and add 1.
 
-**Sorting** - Implement two types of sorting algorithms: Merge sort and bubble sort.
+[check]**Sorting** - Implement two types of sorting algorithms: Merge sort and bubble sort.
 
 **Closest pair problem** - The closest pair of points problem or closest pair problem is a problem of computational geometry: given *n* points in metric space, find a pair of points with the smallest distance between them.
 
@@ -91,7 +91,7 @@ Text
 
 **Count Vowels** - Enter a string and the program counts the number of vowels in the text. For added complexity have it report a sum of each vowel found.
 
-**Check if Palindrome** - Checks if the string entered by the user is a palindrome. That is that it reads the same forwards as backwards like “racecar”
+[check]**Check if Palindrome** - Checks if the string entered by the user is a palindrome. That is that it reads the same forwards as backwards like “racecar”
 
 **Count Words in a String** - Counts the number of individual words in a string. For added complexity read these strings in from a text file and generate a summary.
 
