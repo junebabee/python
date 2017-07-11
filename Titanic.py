@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 
 
-train = pd.read_csv('/Users/June/Desktop/train.csv')
+train = pd.read_csv('.../train.csv')
 y_train = train['Survived'].values
 
 sex = pd.get_dummies(train['Sex'], drop_first = True)
@@ -41,7 +41,7 @@ X_opt = X_train[:, [0,1,2,5,6,7]]
 regressor_OLS = sm.OLS(endog= y_train, exog= X_opt).fit()
 regressor_OLS.summary()
 
-test = pd.read_csv('/Users/June/Desktop/test.csv')
+test = pd.read_csv('.../test.csv')
 X_test = pd.concat([test, pd.get_dummies(test['Sex'], drop_first = True), pd.get_dummies(test['Pclass'], drop_first = True)], axis = 1)
 X_test = X_test.drop(['PassengerId','Pclass','Name','Sex','Parch','Ticket','Fare','Cabin','Embarked'], axis = 1).values
 
@@ -52,7 +52,7 @@ X_test = np.append(arr = np.ones((418,1)).astype(int), values = X_test, axis = 1
                   
 y_pred = regressor_OLS.predict(X_test)
 
-answer = pd.read_csv('/Users/June/Desktop/gender_submission.csv')
+answer = pd.read_csv('.../gender_submission.csv')
 y_test = answer['Survived'].values
 
 y_pred[y_pred >= 0.5] = 1
